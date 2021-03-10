@@ -5,23 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index2.css">
     <title>Document</title>
+
 </head>
 
 <body>
-    <ul>
-        <li>L</li>
-        <li>O</li>
-        <li>A</li>
-        <li>D</li>
-        <li>I</li>
-        <li>N</li>
-        <li>G</li>
-    </ul>
-    <div>abcABC</div>
+    <div id="loding" class="loding">
+        <ul>
+            <li>L</li>
+            <li>O</li>
+            <li>A</li>
+            <li>D</li>
+            <li>I</li>
+            <li>N</li>
+            <li>G</li>
+        </ul>
+    </div>
+    <div id="main" class="hidden">
+
+        <div>aaa</div>
+
+
+
+    </div>
+    <script>
+        setTimeout(function() {
+            let spinner = document.getElementById('loding');
+            let main = document.getElementById('main');
+            spinner.classList.add('loaded');
+            main.classList.remove('hidden');
+
+        }, 3500);
+    </script>
 </body>
 
 </html>

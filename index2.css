@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 body {
     margin: 0;
     padding: 0;
-    background: #262626;
 }
 
-ul {
+div#loding {
+    width: 100vw;
+    height: 100vh;
+    background: #1b3023;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+div#loding ul {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -14,60 +23,64 @@ ul {
     display: flex
 }
 
-ul li {
+div#loding ul li {
     list-style: none;
-    color: #484848;
+    color: #2e2c2c;
     font-family: arial;
     font-size: 5em;
     animation: animate 1.4s linear infinite;
-    font-family: 'Cinzel Decorative', cursive;
-    font-family: 'Open Sans', sans-serif;
-}
-
-div {
-    font-family: 'Cinzel Decorative', cursive;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
 }
 
 @keyframes animate {
     0% {
-        color: #484848;
+        color: #232423;
         text-shadow: none
     }
     90% {
-        color: #484848;
+        color: #3a413b;
         text-shadow: none
     }
     100% {
-        color: #fff900;
-        text-shadow: 0 0 7px #fff900, 0 0 50px #fff900
+        color: #e9a668;
+        text-shadow: 0 0 7px #e9a668, 0 0 50px #e9a668
     }
 }
 
-ul li:nth-child(1) {
+div#loding ul li:nth-child(1) {
     animation-delay: 0.2s
 }
 
-ul li:nth-child(2) {
+div#loding ul li:nth-child(2) {
     animation-delay: 0.4s
 }
 
-ul li:nth-child(3) {
+div#loding ul li:nth-child(3) {
     animation-delay: 0.6s
 }
 
-ul li:nth-child(4) {
+div#loding ul li:nth-child(4) {
     animation-delay: 0.8s
 }
 
-ul li:nth-child(5) {
+div#loding ul li:nth-child(5) {
     animation-delay: 1s
 }
 
-ul li:nth-child(6) {
+div#loding ul li:nth-child(6) {
     animation-delay: 1.2s
 }
 
-ul li:last-child {
+div#loding ul li:last-child {
     animation-delay: 1.4s
+}
+
+.loaded {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+}
+
+.hidden {
+    display: none;
 }
