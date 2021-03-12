@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'MyFont';
-  src: url("/fonts/Celtknot.ttf");
+  src: url("../fonts/Celtknot.ttf");
 }
 
 body {
