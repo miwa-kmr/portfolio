@@ -1,112 +1,114 @@
 @font-face {
-  font-family: 'MyFont';
-  src: url("https://miwa-kmr.github.io/portfolio//fonts/Celtknot.ttf");
+    font-family: 'MyFont';
+    src: url("https://miwa-kmr.github.io/portfolio/fonts/Celtknot.ttf");
 }
 
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 div#loading {
-  width: 100vw;
-  height: 100vh;
-  background: #1b3023;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background: #1b3023;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 div#loading ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 div#loading ul li {
-  list-style: none;
-  color: #2e2c2c;
-  font-size: 5em;
-  -webkit-animation: animate 1.4s linear infinite;
-          animation: animate 1.4s linear infinite;
-  font-family: 'MyFont';
+    list-style: none;
+    color: #2e2c2c;
+    font-size: 5em;
+    -webkit-animation: animate 1.4s linear infinite;
+    animation: animate 1.4s linear infinite;
+    font-family: 'MyFont';
 }
 
 div#loading ul li:nth-child(1) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 div#loading ul li:nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 div#loading ul li:nth-child(3) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 div#loading ul li:nth-child(4) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
 }
 
 div#loading ul li:nth-child(5) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 div#loading ul li:nth-child(6) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
 }
 
 div#loading ul li:last-child {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
 }
 
 @-webkit-keyframes animate {
-  0% {
-    color: #232423;
-    text-shadow: none;
-  }
-  90% {
-    color: #3a413b;
-    text-shadow: none;
-  }
-  100% {
-    color: #e9a668;
-    text-shadow: 0 0 7px #e9a668, 0 0 50px #e9a668;
-  }
+    0% {
+        color: #232423;
+        text-shadow: none;
+    }
+    90% {
+        color: #3a413b;
+        text-shadow: none;
+    }
+    100% {
+        color: #e9a668;
+        text-shadow: 0 0 7px #e9a668, 0 0 50px #e9a668;
+    }
 }
 
 @keyframes animate {
-  0% {
-    color: #232423;
-    text-shadow: none;
-  }
-  90% {
-    color: #3a413b;
-    text-shadow: none;
-  }
-  100% {
-    color: #e9a668;
-    text-shadow: 0 0 7px #e9a668, 0 0 50px #e9a668;
-  }
+    0% {
+        color: #232423;
+        text-shadow: none;
+    }
+    90% {
+        color: #3a413b;
+        text-shadow: none;
+    }
+    100% {
+        color: #e9a668;
+        text-shadow: 0 0 7px #e9a668, 0 0 50px #e9a668;
+    }
 }
 
 .loaded {
-  opacity: 0;
-  display: none;
-  pointer-events: none;
+    opacity: 0;
+    display: none;
+    pointer-events: none;
 }
+
+
 /*# sourceMappingURL=loading.css.map */
