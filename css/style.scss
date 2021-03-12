@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+div#top {
+    background-color: #f7f2ee;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/ireland.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25% auto;
+}
