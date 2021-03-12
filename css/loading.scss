@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('/fonts/Celtknot.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div#loading {
+    width: 100vw;
+    height: 100vh;
+    background: #1b3023;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        li {
+            list-style: none;
+            color: #2e2c2c;
+            font-family: arial;
+            font-size: 5em;
+            animation: animate 1.4s linear infinite;
+            font-family: 'MyFont';
+            &:nth-child(1) {
+                animation-delay: 0.2s;
+            }
+            &:nth-child(2) {
+                animation-delay: 0.4s;
+            }
+            &:nth-child(3) {
+                animation-delay: 0.6s;
+            }
+            &:nth-child(4) {
+                animation-delay: 0.8s;
+            }
+            &:nth-child(5) {
+                animation-delay: 1s;
+            }
+            &:nth-child(6) {
+                animation-delay: 1.2s;
+            }
+            &:last-child {
+                animation-delay: 1.4s;
+            }
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        color: #232423;
+        text-shadow: none;
+    }
+    90% {
+        color: #3a413b;
+        text-shadow: none;
+    }
+    100% {
+        color: #e9a668;
+        text-shadow: 0 0 7px #e9a668, 0 0 50px #e9a668;
+    }
+}
+
+.loaded {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+}
